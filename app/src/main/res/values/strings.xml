@@ -5,11 +5,26 @@
     <string name="title_green_mile">Зеленая Миля</string>
     <string name="title_shawshank">Побег из Шоушенка</string>
     <string name="title_lord_of_the_rings">Властелин колец:\nВозвращение короля</string>
-    <string name="title_forest_gump">Форест Гамп</string>
+    <string name="title_forest_gump">Форрест Гамп</string>
     <string name="title_lion_king">Король Лев</string>
     <string name="green_mile_details">США | драма, криминал</string>
     <string name="shawshank_details">США | драма</string>
     <string name="lord_of_the_rings_details">Новая Зеландия, США | фэнтези, приключения</string>
     <string name="forest_gump_details">США | драма, комедия</string>
     <string name="lion_king_details">США | мультфильм, мюзикл</string>
+
+    <string name="details_about_movie">О фильме</string>
+    <string name="details_year">Год производства</string>
+    <string name="details_country">Страна</string>
+    <string name="details_genre">Жанр</string>
+    <string name="details_tagline">Слоган</string>
+    <string name="details_director">Режиссер</string>
+    <string name="details_scenario">Сценарий</string>
+    <string name="details_producer">Продюсер</string>
+    <string name="details_composer">Композитор</string>
+    <string name="details_installation">Монтаж</string>
+    <string name="details_budget">Бюджет</string>
+    <string name="details_time">Время</string>
+    <string name="details_discussion">Обсуждение</string>
+    <string name="details_send_button">Опубликовать</string>
 </resources>
