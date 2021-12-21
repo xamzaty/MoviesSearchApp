@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movie Search App</string>
+    <string name="title_main">Топ-5 лучших фильмов</string>
+    <string name="button_movie_detail">Подробнее</string>
+    <string name="title_green_mile">Зеленая Миля</string>
+    <string name="title_shawshank">Побег из Шоушенка</string>
+    <string name="title_lord_of_the_rings">Властелин колец:\nВозвращение короля</string>
+    <string name="title_forest_gump">Форест Гамп</string>
+    <string name="title_lion_king">Король Лев</string>
+    <string name="green_mile_details">США | драма, криминал</string>
+    <string name="shawshank_details">США | драма</string>
+    <string name="lord_of_the_rings_details">Новая Зеландия, США | фэнтези, приключения</string>
+    <string name="forest_gump_details">США | драма, комедия</string>
+    <string name="lion_king_details">США | мультфильм, мюзикл</string>
+</resources>
