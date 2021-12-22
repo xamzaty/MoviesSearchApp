@@ -1,18 +1,24 @@
 package kz.moviesearchapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.textfield.TextInputEditText
 
 class DetailsActivity: AppCompatActivity() {
+
+    private var discussionText = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
 
-        movieDetails()
-        setText()
+        setMovieDetailsText()
+        sendButtonAction()
     }
 
     private fun movieDetails(): List<String> {
@@ -36,8 +42,8 @@ class DetailsActivity: AppCompatActivity() {
                 return listOf("The Lord of the Rings: The Return of the King (2003)", "Арагорн штурмует Мордор, а Фродо устал бороться с чарами кольца. Эффектный финал саги, собравший 11 «Оскаров»", "2003", "Новая Зеландия, США", "фэнтези, приключения, драма", "«There can be no triumph without loss. No victory without suffering. No freedom without sacrifice»",
                 "Питер Джексон", "Фрэн Уолш, Филиппа Бойенс, Питер Джексон", "Питер Джексон, Eric Monette, Барри М. Осборн", "Говард Шор", "Джэми Селкирк", "$94 000 000", "201 мин. / 03:21")
             }
-            "forestGump" -> {
-                title = getString(R.string.title_forest_gump)
+            "forrestGump" -> {
+                title = getString(R.string.title_forrest_gump)
                 poster.setImageResource(R.drawable.forest_gump)
                 return listOf("Forrest Gump (1994)", "Полувековая история США глазами чудака из Алабамы. Абсолютная классика Роберта Земекиса с Томом Хэнксом", "1994", "США", "драма, комедия, мелодрама, история, военный", "«Мир уже никогда не будет прежним, после того как вы увидите его глазами Форреста Гампа»",
                 "Роберт Земекис", "Эрик Рот, Уинстон Грум", "Венди Файнерман, Стив Старки, Стив Тиш", "Алан Сильвестри", "Артур Шмидт", "$55 000 000", "142 мин. / 02:22")
@@ -52,7 +58,7 @@ class DetailsActivity: AppCompatActivity() {
         }
     }
 
-    private fun setText() {
+    private fun setMovieDetailsText() {
         findViewById<TextView>(R.id.movie_detail_title).text = movieDetails()[0]
         findViewById<TextView>(R.id.movie_detail_description).text = movieDetails()[1]
         findViewById<TextView>(R.id.movie_detail_year).text = movieDetails()[2]
@@ -66,5 +72,22 @@ class DetailsActivity: AppCompatActivity() {
         findViewById<TextView>(R.id.movie_detail_installation).text = movieDetails()[10]
         findViewById<TextView>(R.id.movie_detail_budget).text = movieDetails()[11]
         findViewById<TextView>(R.id.movie_detail_time).text = movieDetails()[12]
+    }
+
+    private fun sendDataBack() {
+        val intent = Intent()
+        val checkBoxValue = findViewById<CheckBox>(R.id.like_checkbox).isChecked
+        intent.putExtra("etValue", discussionText)
+        intent.putExtra("checkBoxValue", checkBoxValue)
+        setResult(RESULT_OK, intent)
+        finish()
+    }
+
+    private fun sendButtonAction() {
+        findViewById<Button>(R.id.button_send_message).setOnClickListener {
+            discussionText = findViewById<TextInputEditText>(R.id.movie_detail_discussion_et).text.toString()
+
+            sendDataBack()
+        }
     }
 }

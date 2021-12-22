@@ -43,13 +43,27 @@
                 android:text="@string/green_mile_details"
                 android:textColor="@color/black" />
 
-            <Button
-                android:id="@+id/button_green_mile_details"
-                android:layout_width="200dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/button_movie_detail"
-                android:textAllCaps="false" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_green_mile_details"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_movie_detail"
+                    android:textAllCaps="false" />
+
+                <ImageButton
+                    android:id="@+id/share_button_green_mile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -85,13 +99,27 @@
                 android:gravity="center"
                 android:textColor="@color/black"/>
 
-            <Button
-                android:id="@+id/button_shawshenk_details"
-                android:layout_width="200dp"
-                android:layout_gravity="center"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/button_movie_detail"/>
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_shawshenk_details"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_movie_detail"
+                    android:textAllCaps="false" />
+
+                <ImageButton
+                    android:id="@+id/share_button_shawshenk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -127,13 +155,27 @@
                 android:gravity="center"
                 android:textColor="@color/black"/>
 
-            <Button
-                android:id="@+id/button_lord_of_the_rings_details"
-                android:layout_width="200dp"
-                android:layout_gravity="center"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/button_movie_detail"/>
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_lord_of_the_rings_details"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_movie_detail"
+                    android:textAllCaps="false" />
+
+                <ImageButton
+                    android:id="@+id/share_button_lord_of_the_rings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -155,7 +197,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_forest_gump"
+                android:text="@string/title_forrest_gump"
                 android:gravity="center"
                 android:textSize="17sp"
                 android:layout_marginTop="5dp"
@@ -165,17 +207,31 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/forest_gump_details"
+                android:text="@string/forrest_gump_details"
                 android:gravity="center"
                 android:textColor="@color/black"/>
 
-            <Button
-                android:id="@+id/button_forest_gump_details"
-                android:layout_width="200dp"
-                android:layout_gravity="center"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/button_movie_detail"/>
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_forrest_gump_details"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_movie_detail"
+                    android:textAllCaps="false" />
+
+                <ImageButton
+                    android:id="@+id/share_button_forrest_gump"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -212,13 +268,27 @@
                 android:gravity="center"
                 android:textColor="@color/black"/>
 
-            <Button
-                android:id="@+id/button_lion_king_details"
-                android:layout_width="200dp"
-                android:layout_gravity="center"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAllCaps="false"
-                android:text="@string/button_movie_detail"/>
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_lion_king_details"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_movie_detail"
+                    android:textAllCaps="false" />
+
+                <ImageButton
+                    android:id="@+id/share_button_lion_king"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 

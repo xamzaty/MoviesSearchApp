@@ -364,7 +364,6 @@
                 android:text="@string/details_discussion"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/movie_detail_discussion_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:endIconMode="clear_text"
@@ -374,18 +373,43 @@
                 android:layout_marginTop="10dp">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/movie_detail_discussion_et"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:maxLength="300"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/details_send_button"
-                android:layout_gravity="end"
-                android:textAllCaps="false"/>
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/like_checkbox"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+                <CheckBox
+                    android:id="@+id/like_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_send_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_send_button"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
